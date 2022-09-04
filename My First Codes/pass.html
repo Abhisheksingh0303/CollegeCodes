@@ -1,0 +1,18 @@
+<html>
+<head>
+<Script type="text/javascript">
+function show_a()
+{
+var a1=document.f1.t1.value;
+if (a1.length >= 6)
+alert("not more than 6");
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Pin number <input type="text" name="t1"></br>
+<input type="button" value="click me" name="myButton" onclick="show_a()"/>
+</form>
+</body>
+</html>

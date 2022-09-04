@@ -1,0 +1,76 @@
+<html>
+    <script type = text/javascript>
+    function login() {
+        var username = document.f1.t1.value;
+        var password = document.f1.t2.value;
+        var confirm_password = document.f1.t3.value;
+        var emailID = document.f1.t4.value;
+        var phone_number = document.f1.t5.value;
+        var district = document.f1.t6.value;
+        var pin_number = document.f1.t7.value;
+        var mailformat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+        var pass = /^\d+$/;
+
+        if (username == "") {
+            alert("The username cannot be blank");
+            return;
+        }
+
+        if (!password.match(pass)) {
+            alert("Usse only numbers while entering password");
+            return;
+        }
+
+        if (confirm_password != password) {
+            alert("invalid password");
+            return;
+        }
+
+        if (!emailID.match(mailformat)) {
+            alert("invalid mail address");
+            return;
+        }
+
+        if (phone_number.length != 10) {
+            alert("Phone number : not more than 10");
+            return;
+        }
+
+        if (district == "") {
+            alert("District can't be blank")
+            return;
+        }
+
+        if (pin_number.length != 6) {
+            alert("Pin number : not less or more than 6");
+            return;
+        }
+
+        alert("logged in sucessfully");
+
+    }
+
+    </script>
+    <body>
+        <h1><u>STUDENT REGISTRATION FORM</u></h1>
+    <br>
+    <br>
+    <form name="f1">
+        User Name : <input type="text" name="t1">
+        <br><br>
+        Password : <input type="password" name="t2">
+        <br><br>
+        Confirm Password : <input type="text" name="t3">
+        <br><br>
+        Email ID : <input type="text" name="t4">
+            <br><br>
+            Phone number : <input type="text" name="t5">
+            <br><br>
+            District : <input type="text" name="t6">
+            <br><br>
+            Pin number : <input type="text" name="t7">
+            <br><br>
+            <input type="button" value="Submit" name="mybutton" onClick="login()">
+        </form>
+    </body>
+</html>
