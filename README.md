@@ -5,7 +5,7 @@ Welcome to my CollegeCodes repository! This is where I share and showcase my col
 
 ## Technologies and Languages
 
-- List the technologies and programming languages you've used in your projects, such as HTML, CSS, JavaScript, Java, Python, etc.
+- List the technologies and programming languages you've used in your projects, such as HTML, CSS, JavaScript, etc.
 
 ## Contributing
 
