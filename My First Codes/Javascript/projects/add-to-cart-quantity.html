@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cart Quantity</title>
+    <style>
+      button {
+        color: rgb(0, 0, 0);
+        background-color: aqua;
+        border-radius: 4px;
+        font-weight: bold;
+        border-color: rgb(192, 192, 192);
+      }
+      button:hover {
+        color: white;
+        background-color: rgb(0, 120, 120);
+      }
+      h1 {
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Cart Quantity</h1>
+
+    <button onclick="
+    console.log(`Cart Quantity: ${CartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick=" 
+    //CartQuantity = CartQuantity + 1;              <-----we can use this also to re-assign
+    //CartQuantity++;                               <-----this can also be used
+    // This is shortcut and easy method ----->
+    CartQuantity += 1;         
+    console.log(`Cart Quantity: ${CartQuantity}`);
+    ">Add to Cart</button>
+
+    <button onclick="
+    CartQuantity += 2;
+    console.log(`Cart Quantity: ${CartQuantity}`);
+    ">+2</button>
+
+
+    <button onclick="
+    CartQuantity += 3;
+    console.log(`Cart Quantity: ${CartQuantity}`);
+    ">+3</button>
+
+
+    <button onclick="
+    CartQuantity = 0;
+    console.log('Cart Reset Sucessfully');
+    console.log(`Cart Quantity: ${CartQuantity}`);
+     ">Reset Button</button>
+
+    <script>
+     let CartQuantity = 0;
+    </script>
+
+
+  </body>
+</html>
